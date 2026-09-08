@@ -1,0 +1,11 @@
+#!/bin/bash
+
+name=""
+# Default if empty
+echo "Hello, ${name:-User}"
+echo "$name"
+
+# Set if empty
+echo "Hello, ${name:=User}"
+echo "$name"
+
