@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [[ -z "$1" || "$1" == "--help" ]]; then
+  echo "Usage: $0 <fruit>"
+  exit 1
+fi
+
+case $1 in
+  apple)
+    echo "Red, green, and/or yellow"
+    ;;
+  banana)
+    echo "Yellow, green, and/or brown"
+    ;;
+  kiwi)
+    echo "brown outside, green inside"
+    ;;
+  *)
+    echo "ERROR: Unknown fruit"
+    exit 1
+    ;;
+esac
+
